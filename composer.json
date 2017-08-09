@@ -1,0 +1,32 @@
+{
+    "name": "stedjo/stedjo-interface",
+    "description": "Shared interfaces",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Stefan Djokic",
+            "email": "hello@stefandjokic.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/stedjo/stedjo-utility.git"
+        }
+    ],
+    "require": {
+        "php": "^5.6 || ^7.0",
+        "zendframework/zend-http": "^2.6",
+        "stedjo/stedjo-utility": "^0.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SD\\": "src/SD/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SD\\": "test/unit-test/SD/"
+        }
+    }
+}
